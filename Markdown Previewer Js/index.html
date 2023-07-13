@@ -9,16 +9,25 @@
 </head>
 
 <body>
+    <h1>Markdown Previewer</h1>
+    <p>by Peter Kwok</p>
     <div id="editorWrap">
-        <div class="toolbar"></div>
-        <textarea id="editor" cols="50" rows="20"></textarea>
+        <div class="toolbar">
+            <h2 class="toolbarHeading">Editor</h2>
+            <i class="fa-regular fa-square-plus"></i>
+        </div>
+        <textarea id="editor"></textarea>
     </div>
     <div id="previewWrap">
-        <div class="toolbar"></div>
+        <div class="toolbar">
+            <h2 class="toolbarHeading">Previewer</h2>
+            <i class="fa-regular fa-square-plus"></i>
+        </div>
         <div id="preview"></div>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/5.1.1/marked.min.js"></script>
+    <script src="https://kit.fontawesome.com/901784ae91.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script src="app/js/script.js"></script>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
