@@ -1,6 +1,15 @@
 * {
     box-sizing: border-box;
-    margin: 10px 0;
-    padding: 0;
+    // margin: 10px 0;
+    // padding: 0;
     // border: 1px solid black;
+}
+
+blockquote {
+    border-left: 2px solid #ccc;
+    padding-left: 10px
+}
+
+img {
+    height: 250px;
 }
