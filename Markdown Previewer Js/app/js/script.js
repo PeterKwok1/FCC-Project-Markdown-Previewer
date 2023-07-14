@@ -31,5 +31,18 @@ const previewWrap = document.querySelector('#previewWrap')
 
 editorDisplayToggle.addEventListener('click', e => {
     previewWrap.classList.toggle('displayToggle')
+    const plus = document.querySelector('#editorPlus')
+    const minus = document.querySelector(('#editorMinus'))
+    plus.classList.toggle('displayToggle')
+    minus.classList.toggle('displayToggle')
+
+    editor.classList.toggle('short')
+    editor.classList.toggle('tall')
 })
-previewerDisplayToggle.addEventListener('click', e => editorWrap.classList.toggle('displayToggle'))
+previewerDisplayToggle.addEventListener('click', e => {
+    editorWrap.classList.toggle('displayToggle')
+    const plus = document.querySelector('#previewerPlus')
+    const minus = document.querySelector(('#previewerMinus'))
+    plus.classList.toggle('displayToggle')
+    minus.classList.toggle('displayToggle')
+})

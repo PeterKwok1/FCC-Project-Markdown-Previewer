@@ -9,22 +9,24 @@
 </head>
 
 <body>
-    <h1>Markdown Previewer</h1>
-    <p>by Peter Kwok</p>
+    <h1 id="title">Markdown Previewer</h1>
+    <p id="by">by Peter Kwok</p>
     <div id="editorWrap">
         <div class="toolbar">
             <h2 class="toolbarHeading">Editor</h2>
             <div id="editorDisplayToggle">
-                <i class="fa-regular fa-square-plus"></i>
+                <i id="editorPlus" class="fa-regular fa-square-plus"></i>
+                <i id="editorMinus" class="fa-regular fa-square-minus displayToggle"></i>
             </div>
         </div>
-        <textarea id="editor"></textarea>
+        <textarea id="editor" class="short"></textarea>
     </div>
     <div id="previewWrap">
         <div class="toolbar">
             <h2 class="toolbarHeading">Previewer</h2>
             <div id="previewerDisplayToggle">
-                <i class="fa-regular fa-square-plus"></i>
+                <i id="previewerPlus" class="fa-regular fa-square-plus"></i>
+                <i id="previewerMinus" class="fa-regular fa-square-minus displayToggle"></i>
             </div>
         </div>
         <div id="preview"></div>

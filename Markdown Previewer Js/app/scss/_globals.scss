@@ -7,17 +7,39 @@
     border: 1px solid black;
 }
 
+// heading
+
+#title,
+#by {
+    text-align: center;
+}
+
+#title {
+    margin-bottom: 5px;
+}
+
+#by {
+    margin: 5px 0 20px 0;
+    font-size: small;
+}
+
+// wraps
+
 #editorWrap,
 #previewWrap {
     width: 720px;
     max-width: 90%;
-
+    margin: auto;
+    border: 1.5px solid black;
 }
+
+// toolbar
 
 .toolbar {
     display: flex;
     justify-content: space-between;
     height: 30px;
+    border-bottom: 1.5px solid black;
 }
 
 .toolbarHeading {
@@ -25,21 +47,36 @@
     font-size: large;
 }
 
-.fa-square-plus {
+.fa-square-plus,
+.fa-square-minus {
     height: 100%;
+}
+
+.fa-square-plus:hover,
+.fa-square-minus:hover {
+    color: rgb(36, 176, 36)
+}
+
+// editor
+
+#editor {
+    width: 100%;
+    border: none;
 }
 
 .displayToggle {
     display: none
 }
 
-#editor {
-    width: 100%;
+.short {
     height: 405px;
 }
 
+.tall {
+    height: 810px;
+}
 
-// markdown styling
+// previewer (markdown styling)
 
 #previewWrap blockquote {
     border-left: 2px solid #ccc;
