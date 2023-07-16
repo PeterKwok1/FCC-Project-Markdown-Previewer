@@ -4,7 +4,11 @@
     box-sizing: border-box;
     // margin: 10px 0;
     // padding: 0;
-    border: 1px solid black;
+    // border: 1px solid black;
+}
+
+body {
+    background-color: rgb(255, 249, 239);
 }
 
 // heading
@@ -26,11 +30,12 @@
 // wraps
 
 #editorWrap,
-#previewWrap {
+#previewerWrap {
     width: 720px;
     max-width: 90%;
     margin: auto;
     border: 1.5px solid black;
+    box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.5);
 }
 
 // toolbar
@@ -40,6 +45,7 @@
     justify-content: space-between;
     height: 30px;
     border-bottom: 1.5px solid black;
+    background-color: rgb(212, 234, 255);
 }
 
 .toolbarHeading {
@@ -54,7 +60,7 @@
 
 .fa-square-plus:hover,
 .fa-square-minus:hover {
-    color: rgb(36, 176, 36)
+    color: rgb(97, 203, 97)
 }
 
 // editor
@@ -62,6 +68,7 @@
 #editor {
     width: 100%;
     border: none;
+    background-color: white;
 }
 
 .displayToggle {
@@ -78,11 +85,38 @@
 
 // previewer (markdown styling)
 
-#previewWrap blockquote {
-    border-left: 2px solid #ccc;
-    padding-left: 10px
+#previewer {
+    background-color: white;
+    padding: 25px
 }
 
-#previewWrap img {
+#previewer code {
+    background-color: rgb(225, 225, 225);
+    padding: 5px;
+}
+
+#previewer pre {
+    background-color: rgb(225, 225, 225);
+    display: inline-block;
+    line-height: 1.5em;
+    padding: 10px;
+    overflow: auto;
+    max-width: 100%;
+}
+
+#previewer blockquote p {
+    border-left: 3px solid #7d7d7d;
+    padding: 2px 0 2px 10px;
+}
+
+#previewer table,
+th,
+td {
+    border: 1.5px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+#previewer img {
     height: 250px;
 }
