@@ -25,10 +25,10 @@ const previewToggle = $('#preview-toggle')
 const previewWrap = $('#preview-wrap')
 editorToggle.click(() => {
     editorToggle.children().toggleClass('fa-square-plus').toggleClass('fa-square-minus')
-    previewWrap.toggleClass('display-toggle')
+    previewWrap.toggle()
     editor.toggleClass('short').toggleClass('tall')
 })
 previewToggle.click(() => {
     previewToggle.children().toggleClass('fa-square-plus').toggleClass('fa-square-minus')
-    editorWrap.toggleClass('display-toggle')
+    editorWrap.toggle()
 })
